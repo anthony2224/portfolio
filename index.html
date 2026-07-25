@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="industry.css">
+<script src="image-slot.js"></script>
+<style>
+html{scroll-behavior:smooth}
+p,li{text-wrap:pretty}
+h1,h2,h3,h4{text-wrap:balance}
+</style>
+</helmet>
+<nav class="nav" style="position:sticky;top:0;z-index:60;background:color-mix(in srgb, var(--color-bg) 94%, transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--color-divider);padding:12px 32px">
+  <div class="nav-brand" style="display:flex;align-items:baseline;gap:14px;letter-spacing:0.02em">ANTHONY GRAHAM JR.<span class="text-muted" style="font-family:var(--font-body);font-size:11px;letter-spacing:0.1em;font-weight:400">MECHANICAL ENGINEERING — LSU</span></div>
+  <a href="#focus">Focus</a>
+  <a href="#projects">Case studies</a>
+  <a href="#samples">Work samples</a>
+  <a href="#experience">Experience</a>
+  <a href="#contact">Contact</a>
+  <a class="btn btn-primary" href="{{ resumeUrl }}" download="Anthony-Graham-Jr-Resume">Résumé
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+  </a>
+</nav>
+<header data-screen-label="Hero" style="max-width:1240px;margin-left:auto;margin-right:auto;padding:80px 32px 96px;display:grid;grid-template-columns:1.4fr 1fr;gap:64px;align-items:start">
+  <div>
+    <h6 style="color:var(--color-accent-700);display:flex;align-items:center;gap:12px;margin-bottom:20px"><span style="width:36px;height:1px;background:var(--color-accent-600)"></span>PORTFOLIO — B.S. MECHANICAL ENGINEERING CANDIDATE</h6>
+    <h1 style="font-size:76px;line-height:0.98;text-transform:uppercase;margin:0 0 18px">Anthony Graham&nbsp;Jr.</h1>
+    <p style="font-family:var(--font-heading);font-weight:600;font-size:26px;line-height:1.25;color:var(--color-accent-700);max-width:560px;margin:0 0 16px">I take machines apart to learn how they work — then design them to work better.</p>
+    <p class="text-muted" style="font-size:15px;max-width:560px;margin:0 0 28px">Hands-on experience across CAD design, HVAC &amp; building controls, and automation environments at Louisiana State University and in the field. Seeking mechanical engineering internships — automotive design &amp; manufacturing first.</p>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:44px">
+      <a class="btn btn-primary" href="#projects">View project case studies</a>
+      <a class="btn btn-secondary" href="{{ resumeUrl }}" download="Anthony-Graham-Jr-Resume">Download résumé
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+      </a>
+    </div>
+    <div class="blueprint" style="display:grid;grid-template-columns:repeat(4,1fr)">
+      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      <div style="padding:16px 18px;border-right:1px solid var(--color-divider)">
+        <div style="font-family:var(--font-heading);font-weight:600;font-size:36px;line-height:1;color:var(--color-accent-700)">04</div>
+        <div class="text-muted" style="font-size:10px;letter-spacing:0.09em;text-transform:uppercase;margin-top:6px">Project case studies</div>
+      </div>
+      <div style="padding:16px 18px;border-right:1px solid var(--color-divider)">
+        <div style="font-family:var(--font-heading);font-weight:600;font-size:36px;line-height:1;color:var(--color-accent-700)">07</div>
+        <div class="text-muted" style="font-size:10px;letter-spacing:0.09em;text-transform:uppercase;margin-top:6px">CAD drawing samples</div>
+      </div>
+      <div style="padding:16px 18px;border-right:1px solid var(--color-divider)">
+        <div style="font-family:var(--font-heading);font-weight:600;font-size:36px;line-height:1;color:var(--color-accent-700)">02</div>
+        <div class="text-muted" style="font-size:10px;letter-spacing:0.09em;text-transform:uppercase;margin-top:6px">Industry roles</div>
+      </div>
+      <div style="padding:16px 18px">
+        <div style="font-family:var(--font-heading);font-weight:600;font-size:36px;line-height:1;color:var(--color-accent-700)">'28</div>
+        <div class="text-muted" style="font-size:10px;letter-spacing:0.09em;text-transform:uppercase;margin-top:6px">Expected graduation — LSU</div>
+      </div>
+    </div>
+  </div>
+  <figure>
+    <div class="blueprint" style="aspect-ratio:4/5">
+      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      <img src="uploads/headshot-1784860597764.jpg" alt="Anthony Graham Jr." style="width:100%;height:100%;object-fit:cover">
+    </div>
+    <figcaption style="display:flex;justify-content:space-between;letter-spacing:0.06em;text-transform:uppercase"><span>Fig. 00 — A. Graham Jr.</span><span>Baton Rouge, LA</span></figcaption>
+  </figure>
+</header>
+<section id="focus" data-screen-label="Focus areas" style="max-width:1240px;margin-left:auto;margin-right:auto;padding:0 32px 96px;scroll-margin-top:80px">
+  <div style="border-top:2px solid var(--color-text);padding-top:16px;margin-bottom:36px;display:flex;align-items:end;justify-content:space-between;gap:24px">
+    <div>
+      <h6 style="color:var(--color-accent-700);margin:0 0 6px">Section 01 — Focus areas</h6>
+      <h2 style="margin:0">Where I'm headed</h2>
+    </div>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px">
+    <div class="card blueprint" style="padding:20px;gap:10px">
+      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      <div style="display:flex;justify-content:space-between;align-items:center"><span style="font-family:var(--font-heading);font-weight:600;font-size:26px;color:var(--color-neutral-400)">01</span></div>
+      <h4 style="margin:0">Automotive Design &amp; Manufacturing</h4>
+      <p class="card-body">Manufacturing-process research on aircraft engines, GD&amp;T-ready drawing packages, and daily thermal-systems work — the toolkit vehicle programs run on.</p>
+    </div>
+    <div class="card blueprint" style="padding:20px;gap:10px">
+      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      <div style="display:flex;justify-content:space-between;align-items:center"><span style="font-family:var(--font-heading);font-weight:600;font-size:26px;color:var(--color-neutral-400)">02</span></div>
+      <h4 style="margin:0">Machine Learning &amp; Robotics</h4>
+      <p class="card-body">Floor-level exposure to large-scale robotics integration at Amazon, with MATLAB analysis and control wiring from the field.</p>
+    </div>
+    <div class="card blueprint" style="padding:20px;gap:10px">
+      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      <div style="display:flex;justify-content:space-between;align-items:center"><span style="font-family:var(--font-heading);font-weight:600;font-size:26px;color:var(--color-neutral-400)">03</span></div>
+      <h4 style="margin:0">Energy Systems</h4>
+      <p class="card-body">Heat pumps, compressors, and variable frequency drives are my day job — I service the systems energy engineers design.</p>
+    </div>
+    <div class="card blueprint" style="padding:20px;gap:10px">
+      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      <div style="display:flex;justify-content:space-between;align-items:center"><span style="font-family:var(--font-heading);font-weight:600;font-size:26px;color:var(--color-neutral-400)">04</span></div>
+      <h4 style="margin:0">Building Automation</h4>
+      <p class="card-body">I configure and troubleshoot automated building systems — sensors, actuators, and controls — every working week.</p>
+    </div>
+  </div>
+</section>
+<section id="projects" data-screen-label="Project case studies" style="max-width:1240px;margin-left:auto;margin-right:auto;padding:0 32px 96px;scroll-margin-top:80px">
+  <div style="border-top:2px solid var(--color-text);padding-top:16px;margin-bottom:36px;display:flex;align-items:end;justify-content:space-between;gap:24px">
+    <div>
+      <h6 style="color:var(--color-accent-700);margin:0 0 6px">Section 02 — Project case studies</h6>
+      <h2 style="margin:0">Documented engineering work</h2>
+    </div>
+    <p class="text-muted" style="margin:0;font-size:13px;max-width:300px;text-align:right">Four studies, presented as drawing sheets — process, findings, and lessons.</p>
+  </div>
+
+  <article class="blueprint" data-screen-label="Sheet 01 — Tire pump" style="margin-bottom:56px">
+    <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;padding:12px 24px;border-bottom:1px solid var(--color-divider)">
+      <h6 class="text-muted" style="margin:0">PROJECT NO. 001</h6>
+      <div style="display:flex;gap:8px"><span class="tag tag-accent">ME 1212 · LSU</span><span class="tag tag-neutral">Team of 6</span></div>
+    </div>
+    <div style="display:grid;grid-template-columns:1.45fr 1fr;gap:36px;padding:28px 24px">
+      <div>
+        <h3 style="margin:0 0 10px">Reverse Engineering — Electric Tire Pump</h3>
+        <p class="text-muted" style="font-size:15px;margin:0 0 20px">A complete teardown of an electromechanical tire pump: how it moves air, where it wastes effort, and how I'd redesign it.</p>
+        <h6 style="color:var(--color-accent-700);margin:0 0 8px">Process</h6>
+        <ol style="margin:0 0 20px;padding-left:20px;display:grid;gap:6px;font-size:14px">
+          <li>Disassembled the pump and catalogued every mechanical component.</li>
+          <li>Evaluated mechanical components, airflow paths, and system performance.</li>
+          <li>Modeled internal components in 3D CAD and produced AutoCAD drawings.</li>
+          <li>Compiled findings into a structured engineering technical report.</li>
+        </ol>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:28px">
+          <div>
+            <h6 style="color:var(--color-accent-700);margin:0 0 8px">Findings</h6>
+            <ul style="margin:0;padding-left:18px;list-style:square;display:grid;gap:6px;font-size:14px">
+              <li>Identified design limitations in the pump's mechanical layout.</li>
+              <li>Proposed design improvements targeting performance and serviceability.</li>
+            </ul>
+          </div>
+          <div>
+            <h6 style="color:var(--color-accent-700);margin:0 0 8px">Lessons</h6>
+            <ul style="margin:0;padding-left:18px;list-style:square;display:grid;gap:6px;font-size:14px">
+              <li>Form/fit/function analysis on real hardware.</li>
+              <li>Translating measured parts into accurate CAD.</li>
+              <li>Writing to an engineering-report standard.</li>
+            </ul>
+          </div>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:22px">
+          <h6 class="text-muted" style="margin:0">Demonstrated —</h6>
+          <span class="tag tag-outline">Reverse engineering</span><span class="tag tag-outline">Form/fit/function</span><span class="tag tag-outline">3D CAD</span><span class="tag tag-outline">Technical documentation</span>
+        </div>
+      </div>
+      <div style="display:flex">
+        <div class="card blueprint" style="padding:16px;gap:14px;flex:1;display:flex;flex-direction:column">
+          <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px">
+            <h6 style="color:var(--color-accent-700);margin:0">Project document</h6>
+            <span class="text-muted" style="font-size:10px;letter-spacing:0.08em;text-transform:uppercase">DOC 001-A · PDF</span>
+          </div>
+          <a href="docs/tire-pump-report.html" target="_blank" rel="noopener" style="flex:1;position:relative;display:block;border:1px solid var(--color-divider);overflow:hidden;min-height:330px;background:#fff">
+            <img src="assets/docs/tire-pump-cover.png" alt="Technical report — first page preview" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top center">
+            <span style="position:absolute;left:0;right:0;bottom:0;display:flex;justify-content:space-between;gap:8px;padding:9px 12px;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:var(--color-bg);background:linear-gradient(to top, color-mix(in srgb, var(--color-text) 82%, transparent), transparent)"><span>Technical report</span><span>51 pages</span></span>
+          </a>
+          <a class="btn btn-primary btn-block" href="docs/tire-pump-report.html" target="_blank" rel="noopener">View document ↗</a>
+        </div>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:2fr 1.5fr 1fr 0.7fr;border-top:1px solid var(--color-divider)">
+      <div style="padding:10px 24px;border-right:1px solid var(--color-divider)"><div class="text-muted" style="font-size:9px;letter-spacing:0.1em;text-transform:uppercase">Title</div><div style="font-family:var(--font-heading);font-weight:600;font-size:14px">Electric tire pump — teardown &amp; redesign</div></div>
+      <div style="padding:10px 16px;border-right:1px solid var(--color-divider)"><div class="text-muted" style="font-size:9px;letter-spacing:0.1em;text-transform:uppercase">Drawn by</div><div style="font-family:var(--font-heading);font-weight:600;font-size:14px">A. Graham Jr. — team of 6</div></div>
+      <div style="padding:10px 16px;border-right:1px solid var(--color-divider)"><div class="text-muted" style="font-size:9px;letter-spacing:0.1em;text-transform:uppercase">Course</div><div style="font-family:var(--font-heading);font-weight:600;font-size:14px">ME 1212</div></div>
+      
+      <div style="padding:10px 16px"><div class="text-muted" style="font-size:9px;letter-spacing:0.1em;text-transform:uppercase">Sheet</div><div style="font-family:var(--font-heading);font-weight:600;font-size:14px">01 / 04</div></div>
+    </div>
+  </article>
+
+  <article class="blueprint" data-screen-label="Sheet 02 — 3D printer" style="margin-bottom:56px">
+    <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;padding:12px 24px;border-bottom:1px solid var(--color-divider)">
+      <h6 class="text-muted" style="margin:0">PROJECT NO. 002</h6>
+      <div style="display:flex;gap:8px"><span class="tag tag-accent">CM 1020 · LSU</span><span class="tag tag-neutral">Team of 2</span></div>
+    </div>
+    <div style="display:grid;grid-template-columns:1.45fr 1fr;gap:36px;padding:28px 24px">
+      <div>
+        <h3 style="margin:0 0 10px">3D Printer Component Analysis</h3>
+        <p class="text-muted" style="font-size:15px;margin:0 0 20px">A component-level technical brief on a disassembled 3D printer — what each part does, how it's made, and why those materials.</p>
+        <h6 style="color:var(--color-accent-700);margin:0 0 8px">Process</h6>
+        <ol style="margin:0 0 20px;padding-left:20px;display:grid;gap:6px;font-size:14px">
+          <li>Disassembled the printer and identified fasteners, joints, springs, bearings, gears, pulleys, and belts.</li>
+          <li>Studied the manufacturing processes and material selection behind each component.</li>
+          <li>Documented component relationships and mechanism behavior in a structured brief.</li>
+        </ol>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:28px">
+          <div>
+            <h6 style="color:var(--color-accent-700);margin:0 0 8px">Findings</h6>
+            <ul style="margin:0;padding-left:18px;list-style:square;display:grid;gap:6px;font-size:14px">
+              <li>Mapped component relationships into a full mechanism description.</li>
+              <li>Connected each material choice to component function and manufacturing method.</li>
+            </ul>
+          </div>
+          <div>
+            <h6 style="color:var(--color-accent-700);margin:0 0 8px">Lessons</h6>
+            <ul style="margin:0;padding-left:18px;list-style:square;display:grid;gap:6px;font-size:14px">
+              <li>Fast, accurate component identification.</li>
+              <li>Reading a machine as a system, not a parts list.</li>
+            </ul>
+          </div>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:22px">
+          <h6 class="text-muted" style="margin:0">Demonstrated —</h6>
+          <span class="tag tag-outline">Mechanical systems analysis</span><span class="tag tag-outline">Component identification</span><span class="tag tag-outline">Manufacturing knowledge</span>
+        </div>
+      </div>
+      <div style="display:flex">
+        <div class="card blueprint" style="padding:16px;gap:14px;flex:1;display:flex;flex-direction:column">
+          <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px">
+            <h6 style="color:var(--color-accent-700);margin:0">Project document</h6>
+            <span class="text-muted" style="font-size:10px;letter-spacing:0.08em;text-transform:uppercase">DOC 002-A · PDF</span>
+          </div>
+          <a href="docs/printer-brief.html" target="_blank" rel="noopener" style="flex:1;position:relative;display:block;border:1px solid var(--color-divider);overflow:hidden;min-height:330px;background:#fff">
+            <img src="assets/docs/printer-cover.png" alt="Technical brief — first page preview" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top center">
+            <span style="position:absolute;left:0;right:0;bottom:0;display:flex;justify-content:space-between;gap:8px;padding:9px 12px;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:var(--color-bg);background:linear-gradient(to top, color-mix(in srgb, var(--color-text) 82%, transparent), transparent)"><span>Technical brief</span><span>15 pages</span></span>
+          </a>
+          <a class="btn btn-primary btn-block" href="docs/printer-brief.html" target="_blank" rel="noopener">View document ↗</a>
+        </div>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:2fr 1.5fr 1fr 0.7fr;border-top:1px solid var(--color-divider)">
+      <div style="padding:10px 24px;border-right:1px solid var(--color-divider)"><div class="text-muted" style="font-size:9px;letter-spacing:0.1em;text-transform:uppercase">Title</div><div style="font-family:var(--font-heading);font-weight:600;font-size:14px">3D printer — component technical brief</div></div>
+      <div style="padding:10px 16px;border-right:1px solid var(--color-divider)"><div class="text-muted" style="font-size:9px;letter-spacing:0.1em;text-transform:uppercase">Drawn by</div><div style="font-family:var(--font-heading);font-weight:600;font-size:14px">A. Graham Jr. — team of 2</div></div>
+      <div style="padding:10px 16px;border-right:1px solid var(--color-divider)"><div class="text-muted" style="font-size:9px;letter-spacing:0.1em;text-transform:uppercase">Course</div><div style="font-family:var(--font-heading);font-weight:600;font-size:14px">CM 1020</div></div>
+      
+      <div style="padding:10px 16px"><div class="text-muted" style="font-size:9px;letter-spacing:0.1em;text-transform:uppercase">Sheet</div><div style="font-family:var(--font-heading);font-weight:600;font-size:14px">02 / 04</div></div>
+    </div>
+  </article>
+
+  <article class="blueprint" data-screen-label="Sheet 03 — Mechanical clamp" style="margin-bottom:56px">
+    <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;padding:12px 24px;border-bottom:1px solid var(--color-divider)">
+      <h6 class="text-muted" style="margin:0">PROJECT NO. 003</h6>
+      <div style="display:flex;gap:8px"><span class="tag tag-accent">CM 1020 · LSU</span><span class="tag tag-neutral">Team of 2</span></div>
+    </div>
+    <div style="display:grid;grid-template-columns:1.45fr 1fr;gap:36px;padding:28px 24px">
+      <div>
+        <h3 style="margin:0 0 10px">Mechanical Clamp — CAD Design Package</h3>
+        <p class="text-muted" style="font-size:15px;margin:0 0 20px">A production-ready CAD package for a mechanical clamp assembly: every part modeled, dimensioned, costed, and documented.</p>
+        <h6 style="color:var(--color-accent-700);margin:0 0 8px">Process</h6>
+        <ol style="margin:0 0 20px;padding-left:20px;display:grid;gap:6px;font-size:14px">
+          <li>Modeled the complete clamp assembly in SolidWorks.</li>
+          <li>Produced detailed dimensioned drawings for every component.</li>
+          <li>Built the bill of materials and assembly documentation.</li>
+          <li>Analyzed manufacturing methods and material costs.</li>
+          <li>Generated exploded views and component specifications.</li>
+        </ol>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:28px">
+          <div>
+            <h6 style="color:var(--color-accent-700);margin:0 0 8px">Findings</h6>
+            <ul style="margin:0;padding-left:18px;list-style:square;display:grid;gap:6px;font-size:14px">
+              <li>Delivered a complete drawing package with GD&amp;T to ANSI standards.</li>
+              <li>Costed materials and manufacturing methods per component.</li>
+            </ul>
+          </div>
+          <div>
+            <h6 style="color:var(--color-accent-700);margin:0 0 8px">Lessons</h6>
+            <ul style="margin:0;padding-left:18px;list-style:square;display:grid;gap:6px;font-size:14px">
+              <li>GD&amp;T applied under real drawing standards.</li>
+              <li>Documentation is the deliverable — not an afterthought.</li>
+            </ul>
+          </div>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:22px">
+          <h6 class="text-muted" style="margin:0">Demonstrated —</h6>
+          <span class="tag tag-outline">SolidWorks</span><span class="tag tag-outline">GD&amp;T</span><span class="tag tag-outline">Assembly modeling</span><span class="tag tag-outline">BOM &amp; documentation</span>
+        </div>
+      </div>
+      <div style="display:flex">
+        <div class="card blueprint" style="padding:16px;gap:14px;flex:1;display:flex;flex-direction:column">
+          <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px">
+            <h6 style="color:var(--color-accent-700);margin:0">Project document</h6>
+            <span class="text-muted" style="font-size:10px;letter-spacing:0.08em;text-transform:uppercase">DOC 003-A · Drawings + BOM · PDF</span>
+          </div>
+          <a href="docs/clamp-cad-package.html" target="_blank" rel="noopener" style="flex:1;position:relative;display:block;border:1px solid var(--color-divider);overflow:hidden;min-height:330px;background:#fff">
+            <img src="assets/docs/clamp-cover.png" alt="Design package — first page preview" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top center">
+            <span style="position:absolute;left:0;right:0;bottom:0;display:flex;justify-content:space-between;gap:8px;padding:9px 12px;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:var(--color-bg);background:linear-gradient(to top, color-mix(in srgb, var(--color-text) 82%, transparent), transparent)"><span>Design package</span><span>15 pages</span></span>
+          </a>
+          <a class="btn btn-primary btn-block" href="docs/clamp-cad-package.html" target="_blank" rel="noopener">View document ↗</a>
+        </div>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:2fr 1.5fr 1fr 0.7fr;border-top:1px solid var(--color-divider)">
+      <div style="padding:10px 24px;border-right:1px solid var(--color-divider)"><div class="text-muted" style="font-size:9px;letter-spacing:0.1em;text-transform:uppercase">Title</div><div style="font-family:var(--font-heading);font-weight:600;font-size:14px">Mechanical clamp — full CAD package</div></div>
+      <div style="padding:10px 16px;border-right:1px solid var(--color-divider)"><div class="text-muted" style="font-size:9px;letter-spacing:0.1em;text-transform:uppercase">Drawn by</div><div style="font-family:var(--font-heading);font-weight:600;font-size:14px">A. Graham Jr. — team of 2</div></div>
+      <div style="padding:10px 16px;border-right:1px solid var(--color-divider)"><div class="text-muted" style="font-size:9px;letter-spacing:0.1em;text-transform:uppercase">Course</div><div style="font-family:var(--font-heading);font-weight:600;font-size:14px">CM 1020</div></div>
+      
+      <div style="padding:10px 16px"><div class="text-muted" style="font-size:9px;letter-spacing:0.1em;text-transform:uppercase">Sheet</div><div style="font-family:var(--font-heading);font-weight:600;font-size:14px">03 / 04</div></div>
+    </div>
+  </article>
+
+  <article class="blueprint" data-screen-label="Sheet 04 — Manufacturing report" style="margin-bottom:0">
+    <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;padding:12px 24px;border-bottom:1px solid var(--color-divider)">
+      <h6 class="text-muted" style="margin:0">PROJECT NO. 004</h6>
+      <div style="display:flex;gap:8px"><span class="tag tag-accent">ME 3633 · LSU</span><span class="tag tag-neutral">Team of 6</span></div>
+    </div>
+    <div style="display:grid;grid-template-columns:1.45fr 1fr;gap:36px;padding:28px 24px">
+      <div>
+        <h3 style="margin:0 0 10px">Manufacturing Processes — Casting &amp; Fabrication in Aircraft Engines</h3>
+        <p class="text-muted" style="font-size:15px;margin:0 0 20px">A research study of how aircraft-engine components are actually made — where casting wins, where fabrication wins, and why.</p>
+        <h6 style="color:var(--color-accent-700);margin:0 0 8px">Process</h6>
+        <ol style="margin:0 0 20px;padding-left:20px;display:grid;gap:6px;font-size:14px">
+          <li>Researched machining technologies used in aircraft-engine production.</li>
+          <li>Identified which engine components rely on casting versus fabrication.</li>
+          <li>Weighed the advantages and disadvantages of each technique.</li>
+          <li>Illustrated the report with models and figures of real examples.</li>
+        </ol>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:28px">
+          <div>
+            <h6 style="color:var(--color-accent-700);margin:0 0 8px">Findings</h6>
+            <ul style="margin:0;padding-left:18px;list-style:square;display:grid;gap:6px;font-size:14px">
+              <li>Matched component families to their production methods.</li>
+              <li>Documented the trade-offs that drive casting vs. fabrication decisions.</li>
+            </ul>
+          </div>
+          <div>
+            <h6 style="color:var(--color-accent-700);margin:0 0 8px">Lessons</h6>
+            <ul style="margin:0;padding-left:18px;list-style:square;display:grid;gap:6px;font-size:14px">
+              <li>Manufacturing-process literacy that transfers directly to automotive powertrains and structures.</li>
+            </ul>
+          </div>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:22px">
+          <h6 class="text-muted" style="margin:0">Demonstrated —</h6>
+          <span class="tag tag-outline">Manufacturing processes</span><span class="tag tag-outline">Casting &amp; fabrication</span><span class="tag tag-outline">Research &amp; analysis</span>
+        </div>
+      </div>
+      <div style="display:flex">
+        <div class="card blueprint" style="padding:16px;gap:14px;flex:1;display:flex;flex-direction:column">
+          <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px">
+            <h6 style="color:var(--color-accent-700);margin:0">Project document</h6>
+            <span class="text-muted" style="font-size:10px;letter-spacing:0.08em;text-transform:uppercase">DOC 004-A · PDF</span>
+          </div>
+          <a href="docs/engine-report.html" target="_blank" rel="noopener" style="flex:1;position:relative;display:block;border:1px solid var(--color-divider);overflow:hidden;min-height:330px;background:#fff">
+            <img src="assets/docs/engine-cover.png" alt="Technical report — first page preview" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top center">
+            <span style="position:absolute;left:0;right:0;bottom:0;display:flex;justify-content:space-between;gap:8px;padding:9px 12px;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:var(--color-bg);background:linear-gradient(to top, color-mix(in srgb, var(--color-text) 82%, transparent), transparent)"><span>Technical report</span><span>14 pages</span></span>
+          </a>
+          <a class="btn btn-primary btn-block" href="docs/engine-report.html" target="_blank" rel="noopener">View document ↗</a>
+        </div>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:2fr 1.5fr 1fr 0.7fr;border-top:1px solid var(--color-divider)">
+      <div style="padding:10px 24px;border-right:1px solid var(--color-divider)"><div class="text-muted" style="font-size:9px;letter-spacing:0.1em;text-transform:uppercase">Title</div><div style="font-family:var(--font-heading);font-weight:600;font-size:14px">Casting &amp; fabrication — aircraft engines</div></div>
+      <div style="padding:10px 16px;border-right:1px solid var(--color-divider)"><div class="text-muted" style="font-size:9px;letter-spacing:0.1em;text-transform:uppercase">Drawn by</div><div style="font-family:var(--font-heading);font-weight:600;font-size:14px">A. Graham Jr. — team of 6</div></div>
+      <div style="padding:10px 16px;border-right:1px solid var(--color-divider)"><div class="text-muted" style="font-size:9px;letter-spacing:0.1em;text-transform:uppercase">Course</div><div style="font-family:var(--font-heading);font-weight:600;font-size:14px">ME 3633</div></div>
+      
+      <div style="padding:10px 16px"><div class="text-muted" style="font-size:9px;letter-spacing:0.1em;text-transform:uppercase">Sheet</div><div style="font-family:var(--font-heading);font-weight:600;font-size:14px">04 / 04</div></div>
+    </div>
+  </article>
+</section>
+<section id="samples" data-screen-label="CAD work samples" style="max-width:1240px;margin-left:auto;margin-right:auto;padding:0 32px 96px;scroll-margin-top:80px">
+  <div style="border-top:2px solid var(--color-text);padding-top:16px;margin-bottom:36px;display:flex;align-items:end;justify-content:space-between;gap:24px">
+    <div>
+      <h6 style="color:var(--color-accent-700);margin:0 0 6px">Section 03 — CAD &amp; drafting samples</h6>
+      <h2 style="margin:0">Drawings held to standard</h2>
+    </div>
+    <div style="display:grid;gap:10px;justify-items:end"><p class="text-muted" style="margin:0;font-size:13px;max-width:320px;text-align:right">Industry-standard engineering graphics — clarity, precision, and adherence to ANSI/ASME.</p><a class="btn btn-secondary" href="uploads/SolidWorks Drawings.pdf" target="_blank" rel="noopener">Full drawing package (PDF) ↗</a></div>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-bottom:44px">
+    <div class="card blueprint" style="padding:20px;gap:10px">
+      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      <h6 style="color:var(--color-accent-700);margin:0">Drawing standards</h6>
+      <ul style="margin:0;padding-left:18px;list-style:square;display:grid;gap:6px;font-size:14px;columns:auto">
+        <li>ANSI Y14.5 drafting standards</li>
+        <li>Third-angle projection</li>
+        <li>Proper dimensioning practices</li>
+        <li>Material specifications</li>
+        <li>Scale notation and title blocks</li>
+      </ul>
+    </div>
+    <div class="card blueprint" style="padding:20px;gap:10px">
+      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      <h6 style="color:var(--color-accent-700);margin:0">CAD capabilities</h6>
+      <ul style="margin:0;padding-left:18px;list-style:square;display:grid;gap:6px;font-size:14px;grid-template-columns:1fr 1fr">
+        <li>3D solid &amp; surface modeling</li>
+        <li>Assembly creation &amp; management</li>
+        <li>Dimensioned engineering drawings</li>
+        <li>GD&amp;T</li>
+        <li>Section &amp; detail views</li>
+        <li>Isometric &amp; orthographic projections</li>
+        <li>Bill of Materials creation</li>
+        <li>Technical documentation</li>
+      </ul>
+    </div>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(265px,1fr));gap:26px">
+    <figure>
+      <div class="blueprint" style="aspect-ratio:3/4">
+        <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+        <image-slot id="cad-1" shape="rect" fit="contain" src="assets/cad/fig01.png" placeholder="Drop: wrench assembly — BOM + isometric"></image-slot>
+      </div>
+      <figcaption>FIG. 01 — Wrench: 3D model &amp; multiview drawing</figcaption>
+    </figure>
+    <figure>
+      <div class="blueprint" style="aspect-ratio:3/4">
+        <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+        <image-slot id="cad-2" shape="rect" fit="contain" src="assets/cad/fig02.png" placeholder="Drop: handle — orthographic + isometric"></image-slot>
+      </div>
+      <figcaption>FIG. 02 — SolidWorks part studies: isometric &amp; dimensioned views</figcaption>
+    </figure>
+    <figure>
+      <div class="blueprint" style="aspect-ratio:3/4">
+        <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+        <image-slot id="cad-3" shape="rect" fit="contain" src="assets/cad/page-03.png" placeholder="Drop: clip — front view + thickness"></image-slot>
+      </div>
+      <figcaption>FIG. 03 — Clip: front view with thickness callouts</figcaption>
+    </figure>
+    <figure>
+      <div class="blueprint" style="aspect-ratio:3/4">
+        <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+        <image-slot id="cad-4" shape="rect" fit="contain" src="assets/cad/page-04.png" placeholder="Drop: cap screw — thread sizes + pitch"></image-slot>
+      </div>
+      <figcaption>FIG. 04 — Cap screw &amp; threaded pivot pin: thread sizes &amp; pitch detail</figcaption>
+    </figure>
+    <figure>
+      <div class="blueprint" style="aspect-ratio:3/4">
+        <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+        <image-slot id="cad-5" shape="rect" fit="contain" src="assets/cad/fig05.png" placeholder="Drop: threaded screw — side + isometric"></image-slot>
+      </div>
+      <figcaption>FIG. 05 — Handle ball &amp; Handle: GD&amp;T callouts &amp; section view</figcaption>
+    </figure>
+    <figure>
+      <div class="blueprint" style="aspect-ratio:3/4">
+        <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+        <image-slot id="cad-6" shape="rect" fit="contain" src="assets/cad/fig06.png" placeholder="Drop: handle ball — GD&T callouts"></image-slot>
+      </div>
+      <figcaption>FIG. 06 — Machine jaw (upper &amp; lower): stepped profile &amp; section views</figcaption>
+    </figure>
+    <figure>
+      <div class="blueprint" style="aspect-ratio:3/4">
+        <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+        <image-slot id="cad-7" shape="rect" fit="contain" src="assets/cad/fig07.png" placeholder="Drop: upper + lower jaws — GD&T + sections"></image-slot>
+      </div>
+      <figcaption>FIG. 07 — Carrier: cross-sections &amp; dimensions</figcaption>
+    </figure>
+  </div>
+</section>
+<section id="experience" data-screen-label="Experience" style="max-width:1240px;margin-left:auto;margin-right:auto;padding:0 32px 96px;scroll-margin-top:80px">
+  <div style="border-top:2px solid var(--color-text);padding-top:16px;margin-bottom:12px;display:flex;align-items:end;justify-content:space-between;gap:24px">
+    <div>
+      <h6 style="color:var(--color-accent-700);margin:0 0 6px">Section 04 — Experience</h6>
+      <h2 style="margin:0">Field-tested, not just classroom-taught</h2>
+    </div>
+  </div>
+  <div style="display:grid;grid-template-columns:180px 1.1fr 1.5fr;gap:28px;padding:26px 0;border-bottom:1px solid var(--color-divider)">
+    <h6 class="text-muted" style="margin:0;padding-top:4px">Sep 2024 — Present</h6>
+    <div>
+      <h4 style="margin:0 0 4px">HVAC Technician</h4>
+      <div style="font-size:14px;color:var(--color-accent-700)">Syntergy Energy Management Solutions LLC — Baton Rouge, LA</div>
+    </div>
+    <div>
+      <ul style="margin:0 0 14px;padding-left:18px;list-style:square;display:grid;gap:6px;font-size:14px">
+        <li>Diagnose, configure, and troubleshoot HVAC control systems — sensors, actuators, electrical components, and automated building systems.</li>
+        <li>Support the operation of heat pumps, compressors, and variable frequency drives (VFDs).</li>
+        <li>Perform system testing and adjustments to improve operational performance.</li>
+      </ul>
+      <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+        <h6 class="text-muted" style="margin:0">Relevant to —</h6>
+        <span class="tag tag-accent">Automotive thermal systems</span><span class="tag tag-accent">Robotics cooling</span><span class="tag tag-accent">Industrial automation</span>
+      </div>
+    </div>
+  </div>
+  <div style="display:grid;grid-template-columns:180px 1.1fr 1.5fr;gap:28px;padding:26px 0;border-bottom:1px solid var(--color-divider)">
+    <h6 class="text-muted" style="margin:0;padding-top:4px">May — Dec 2024</h6>
+    <div>
+      <h4 style="margin:0 0 4px">Fulfillment Associate — Automation Environment</h4>
+      <div style="font-size:14px;color:var(--color-accent-700)">Amazon — Port Allen, LA</div>
+    </div>
+    <div>
+      <ul style="margin:0;padding-left:18px;list-style:square;display:grid;gap:6px;font-size:14px">
+        <li>Worked a high-volume production environment to standardized processes, quality requirements, and efficiency metrics.</li>
+        <li>Assisted in system and mechanical assembly operations and building-automation issue resolution.</li>
+        <li>Gained exposure to large-scale automation, robotics integration, and process optimization.</li>
+      </ul>
+    </div>
+  </div>
+  <div style="display:grid;grid-template-columns:180px 1.1fr 1.5fr;gap:28px;padding:26px 0;border-bottom:1px solid var(--color-divider)">
+    <h6 class="text-muted" style="margin:0;padding-top:4px">Ongoing</h6>
+    <div>
+      <h4 style="margin:0 0 4px">Member — NSBE</h4>
+      <div style="font-size:14px;color:var(--color-accent-700)">National Society of Black Engineers — LSU chapter</div>
+    </div>
+    <div>
+      <ul style="margin:0;padding-left:18px;list-style:square;display:grid;gap:6px;font-size:14px">
+        <li>Engineering workshops, industry networking, and technical development events.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section id="education" data-screen-label="Education and direction" style="max-width:1240px;margin-left:auto;margin-right:auto;padding:0 32px 96px;scroll-margin-top:80px">
+  <div style="border-top:2px solid var(--color-text);padding-top:16px;margin-bottom:36px">
+    <h6 style="color:var(--color-accent-700);margin:0 0 6px">Section 05 — Education &amp; direction</h6>
+    <h2 style="margin:0">Trained at LSU, pointed at production</h2>
+  </div>
+  <div style="display:grid;grid-template-columns:5fr 7fr;gap:48px;align-items:start">
+    <div class="card blueprint" style="padding:22px;gap:0">
+      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      <h6 style="color:var(--color-accent-700);margin:0 0 10px">Education</h6>
+      <h3 style="margin:0 0 4px">Louisiana State University</h3>
+      <p style="font-size:15px;margin:0 0 18px">Candidate for B.S. in Mechanical Engineering</p>
+      <div style="display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-top:1px solid var(--color-divider);font-size:13px"><span class="text-muted" style="letter-spacing:0.06em;text-transform:uppercase;font-size:11px">Expected graduation</span><span style="font-family:var(--font-heading);font-weight:600">May 2028</span></div>
+      <div style="display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-top:1px solid var(--color-divider);font-size:13px"><span class="text-muted" style="letter-spacing:0.06em;text-transform:uppercase;font-size:11px">Campus</span><span style="font-family:var(--font-heading);font-weight:600">Baton Rouge, LA</span></div>
+      <div style="display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-top:1px solid var(--color-divider);font-size:13px"><span class="text-muted" style="letter-spacing:0.06em;text-transform:uppercase;font-size:11px">Affiliation</span><span style="font-family:var(--font-heading);font-weight:600">NSBE — LSU chapter</span></div>
+      <div style="display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-top:1px solid var(--color-divider);font-size:13px"><span class="text-muted" style="letter-spacing:0.06em;text-transform:uppercase;font-size:11px">Core tools</span><span style="font-family:var(--font-heading);font-weight:600">SolidWorks · AutoCAD · Fusion 360 · MATLAB</span></div>
+    </div>
+    <div>
+      <h6 style="color:var(--color-accent-700);margin:0 0 14px">Where I'm pointed</h6>
+      <p style="font-family:var(--font-heading);font-weight:600;font-size:30px;line-height:1.25;margin:0 0 16px">I plan to spend my career turning engineering design into things that get built — across mechanical design, manufacturing, robotics, and energy systems.</p>
+      <p class="text-muted" style="font-size:15px;max-width:560px;margin:0">Every project here was chosen to build a versatile engineering foundation: CAD and drawing packages, hands-on thermal-systems fieldwork, and time on an automation floor. I'm ready to bring that toolkit to a real engineering team.</p>
+    </div>
+  </div>
+</section>
+<section id="contact" data-screen-label="Contact" style="background:var(--color-accent-900);color:var(--color-accent-100);scroll-margin-top:80px">
+  <div style="max-width:1240px;margin-left:auto;margin-right:auto;padding:88px 32px 36px">
+    <div style="display:grid;grid-template-columns:1.2fr 1fr;gap:64px;align-items:start">
+      <div>
+        <h6 style="color:var(--color-accent-300);margin:0 0 14px">Section 06 — Contact</h6>
+        <h2 style="font-size:56px;line-height:1;text-transform:uppercase;color:var(--color-accent-100);margin:0 0 16px">Let's talk engineering.</h2>
+        <p style="color:var(--color-accent-200);font-size:15px;max-width:520px;margin:0 0 28px">I'm seeking mechanical engineering internships — automotive design &amp; manufacturing first. If your team builds real machines, I'd like to be considered.</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <a class="btn" href="mailto:aj.graham.2004@gmail.com?subject=Internship%20opportunity" style="background:var(--color-accent-100);border-color:var(--color-accent-100);color:var(--color-accent-900)">Email me</a>
+          <a class="btn" href="https://www.linkedin.com/in/anthony-graham-jr-3b04401ba" target="_blank" rel="noopener" style="border-color:var(--color-accent-400);color:var(--color-accent-100)">LinkedIn ↗</a>
+          <a class="btn" href="{{ resumeUrl }}" download="Anthony-Graham-Jr-Resume" style="border-color:transparent;color:var(--color-accent-300)">Download résumé</a>
+        </div>
+      </div>
+      <div style="padding-top:8px">
+        <div style="display:grid;grid-template-columns:110px 1fr;gap:12px;padding:12px 0;border-top:1px solid color-mix(in srgb, var(--color-accent-100) 25%, transparent);font-size:14px"><span style="color:var(--color-accent-300);font-size:11px;letter-spacing:0.08em;text-transform:uppercase;padding-top:2px">Email</span><a href="mailto:aj.graham.2004@gmail.com" style="color:var(--color-accent-100)">aj.graham.2004@gmail.com</a></div>
+        <sc-if value="{{ showPhone }}" hint-placeholder-val="{{ true }}">
+          <div style="display:grid;grid-template-columns:110px 1fr;gap:12px;padding:12px 0;border-top:1px solid color-mix(in srgb, var(--color-accent-100) 25%, transparent);font-size:14px"><span style="color:var(--color-accent-300);font-size:11px;letter-spacing:0.08em;text-transform:uppercase;padding-top:2px">Phone</span><a href="tel:+19166984659" style="color:var(--color-accent-100);text-decoration:none">(916) 698-4659</a></div>
+        </sc-if>
+        <div style="display:grid;grid-template-columns:110px 1fr;gap:12px;padding:12px 0;border-top:1px solid color-mix(in srgb, var(--color-accent-100) 25%, transparent);font-size:14px"><span style="color:var(--color-accent-300);font-size:11px;letter-spacing:0.08em;text-transform:uppercase;padding-top:2px">Location</span><span>Baton Rouge, LA</span></div>
+        <div style="display:grid;grid-template-columns:110px 1fr;gap:12px;padding:12px 0;border-top:1px solid color-mix(in srgb, var(--color-accent-100) 25%, transparent);border-bottom:1px solid color-mix(in srgb, var(--color-accent-100) 25%, transparent);font-size:14px"><span style="color:var(--color-accent-300);font-size:11px;letter-spacing:0.08em;text-transform:uppercase;padding-top:2px">LinkedIn</span><a href="https://www.linkedin.com/in/anthony-graham-jr-3b04401ba" target="_blank" rel="noopener" style="color:var(--color-accent-100)">/in/anthony-graham-jr</a></div>
+      </div>
+    </div>
+    <div style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:72px;padding-top:16px;border-top:1px solid color-mix(in srgb, var(--color-accent-100) 25%, transparent);font-size:12px;color:var(--color-accent-300)">
+      <span>© 2026 Anthony Graham Jr.</span>
+      <span>B.S. Mechanical Engineering — LSU, expected May 2028</span>
+      <span>All drawings and photos are my own project work.</span>
+    </div>
+  </div>
+</section>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showPhone&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Contact&quot;},&quot;resumeUrl&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;Anthony-Graham-Jr-Resume-General.pdf&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Contact&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      showPhone: this.props.showPhone ?? true,
+      resumeUrl: this.props.resumeUrl ?? 'Anthony-Graham-Jr-Resume-General.pdf',
+    };
+  }
+}
+</script>
+</body>
+</html>

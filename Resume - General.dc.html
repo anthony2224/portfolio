@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="industry.css">
+<script src="doc-page.js"></script>
+<style>
+doc-page:not(:defined){visibility:hidden}
+*{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+</style>
+</helmet>
+<doc-page size="letter">
+  <section class="page" style="padding:18px;display:flex;font-family:var(--font-body);color:var(--color-text)">
+    <div class="blueprint" style="flex:1;display:flex;flex-direction:column;padding:20px 34px 0;background:#fff">
+      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      <div style="display:flex;justify-content:space-between;gap:24px;align-items:flex-start">
+        <div>
+          <div style="font-family:var(--font-heading);font-weight:600;font-size:36px;line-height:0.95;text-transform:uppercase">Anthony Graham Jr.</div>
+          <div style="font-size:11.5px;letter-spacing:0.08em;text-transform:uppercase;color:var(--color-accent-700);margin-top:6px"><!--R:ROLE-->Mechanical Engineering Internship Candidate<!--/R:ROLE--></div>
+        </div>
+        <div style="text-align:right;font-size:11px;line-height:1.6;color:var(--color-neutral-800);white-space:nowrap;flex:none">
+          <div>Baton Rouge, LA<sc-if value="{{ showPhone }}" hint-placeholder-val="{{ true }}"><span> · (916) 698-4659</span></sc-if></div>
+          <div>aj.graham.2004@gmail.com</div>
+          <div>linkedin.com/in/anthony-graham-jr-3b04401ba</div>
+          <div>Portfolio: agrahamjrportfolio.my.canva.site</div>
+        </div>
+      </div>
+      <div style="height:2px;background:var(--color-text);margin:9px 0 7px"></div>
+      <p style="font-size:12.5px;line-height:1.42;margin:0"><!--R:OBJ-->Mechanical Engineering student at LSU with hands-on experience in mechanical design, CAD modeling, HVAC systems, and automation environments. Seeking a mechanical engineering internship.<!--/R:OBJ--></p>
+      <div style="display:flex;align-items:center;gap:10px;margin:11px 0 7px"><h6 style="margin:0;color:var(--color-accent-700);font-size:12px">01 · Technical skills</h6><div style="flex:1;height:1px;background:var(--color-divider)"></div></div>
+      <div><!--R:SKILLS--><div style="display:grid;grid-template-columns:170px 1fr;gap:12px;padding:2.5px 0;font-size:12.5px;line-height:1.35"><span style="font-family:var(--font-heading);font-weight:600;text-transform:uppercase;letter-spacing:0.03em;font-size:11.5px;color:var(--color-neutral-800)">CAD &amp; Design</span><span>SolidWorks, AutoCAD, Fusion 360 — assemblies, engineering drawings, GD&amp;T</span></div><div style="display:grid;grid-template-columns:170px 1fr;gap:12px;padding:2.5px 0;font-size:12.5px;line-height:1.35"><span style="font-family:var(--font-heading);font-weight:600;text-transform:uppercase;letter-spacing:0.03em;font-size:11.5px;color:var(--color-neutral-800)">Mechanical Engineering</span><span>Mechanical disassembly, reverse engineering, form/fit/function analysis, mechanical systems</span></div><div style="display:grid;grid-template-columns:170px 1fr;gap:12px;padding:2.5px 0;font-size:12.5px;line-height:1.35"><span style="font-family:var(--font-heading);font-weight:600;text-transform:uppercase;letter-spacing:0.03em;font-size:11.5px;color:var(--color-neutral-800)">Automation &amp; Controls</span><span>Conveyor systems, automated material handling, autonomous sorting, control wiring</span></div><div style="display:grid;grid-template-columns:170px 1fr;gap:12px;padding:2.5px 0;font-size:12.5px;line-height:1.35"><span style="font-family:var(--font-heading);font-weight:600;text-transform:uppercase;letter-spacing:0.03em;font-size:11.5px;color:var(--color-neutral-800)">Thermal &amp; HVAC Systems</span><span>HVAC controls, facilities HVAC systems, heat pumps, VFDs, system troubleshooting</span></div><div style="display:grid;grid-template-columns:170px 1fr;gap:12px;padding:2.5px 0;font-size:12.5px;line-height:1.35"><span style="font-family:var(--font-heading);font-weight:600;text-transform:uppercase;letter-spacing:0.03em;font-size:11.5px;color:var(--color-neutral-800)">Software &amp; Analysis</span><span>MATLAB, Microsoft Excel, Microsoft Word</span></div><div style="display:grid;grid-template-columns:170px 1fr;gap:12px;padding:2.5px 0;font-size:12.5px;line-height:1.35"><span style="font-family:var(--font-heading);font-weight:600;text-transform:uppercase;letter-spacing:0.03em;font-size:11.5px;color:var(--color-neutral-800)">Engineering Methods</span><span>Design validation, technical reports, root-cause analysis, system optimization</span></div><!--/R:SKILLS--></div>
+      <div style="display:flex;align-items:center;gap:10px;margin:11px 0 7px"><h6 style="margin:0;color:var(--color-accent-700);font-size:12px">02 · Engineering projects</h6><div style="flex:1;height:1px;background:var(--color-divider)"></div></div>
+      <div><!--R:PROJECTS--><div style="margin-bottom:9px"><div style="display:flex;justify-content:space-between;gap:12px;align-items:baseline"><span style="font-family:var(--font-heading);font-weight:600;font-size:14px">Reverse Engineering — Electric Tire Pump</span><span class="text-muted" style="font-size:10.5px;white-space:nowrap">ME 1212 · LSU · Team of 6</span></div><ul style="margin:4px 0 0;padding-left:16px;font-size:12.5px;line-height:1.35;display:grid;gap:2px"><li>Disassembled and analyzed an electromechanical tire pump — components, airflow paths, and system performance.</li><li>Created 3D CAD models and AutoCAD drawings of internal components; proposed design improvements in a structured technical report.</li></ul></div><div style="margin-bottom:9px"><div style="display:flex;justify-content:space-between;gap:12px;align-items:baseline"><span style="font-family:var(--font-heading);font-weight:600;font-size:14px">Mechanical Clamp — CAD Design Package</span><span class="text-muted" style="font-size:10.5px;white-space:nowrap">CM 1020 · LSU · Team of 2</span></div><ul style="margin:4px 0 0;padding-left:16px;font-size:12.5px;line-height:1.35;display:grid;gap:2px"><li>Produced a complete SolidWorks package: dimensioned drawings, exploded views, bill of materials, and assembly documentation.</li><li>Analyzed manufacturing methods and material costs; applied GD&amp;T to ANSI Y14.5 drafting standards.</li></ul></div><div style="margin-bottom:0px"><div style="display:flex;justify-content:space-between;gap:12px;align-items:baseline"><span style="font-family:var(--font-heading);font-weight:600;font-size:14px">Manufacturing Processes — Casting &amp; Fabrication in Aircraft Engines</span><span class="text-muted" style="font-size:10.5px;white-space:nowrap">ME 3633 · LSU · Team of 6</span></div><ul style="margin:4px 0 0;padding-left:16px;font-size:12.5px;line-height:1.35;display:grid;gap:2px"><li>Researched machining technologies used in aircraft-engine production; mapped component families to casting vs. fabrication methods.</li><li>Documented advantages, disadvantages, and selection trade-offs, illustrated with models and figures.</li></ul></div><!--/R:PROJECTS--></div>
+      <div style="display:flex;align-items:center;gap:10px;margin:11px 0 7px"><h6 style="margin:0;color:var(--color-accent-700);font-size:12px">03 · Professional experience</h6><div style="flex:1;height:1px;background:var(--color-divider)"></div></div>
+      <div><!--R:EXP--><div style="margin-bottom:9px"><div style="display:flex;justify-content:space-between;gap:12px;align-items:baseline"><span><span style="font-family:var(--font-heading);font-weight:600;font-size:14px">HVAC Technician</span><span style="font-size:12px;color:var(--color-accent-700)"> — Syntergy Energy Management Solutions LLC, Baton Rouge, LA</span></span><span class="text-muted" style="font-size:10.5px;white-space:nowrap">Sep 2024 — Present</span></div><ul style="margin:4px 0 0;padding-left:16px;font-size:12.5px;line-height:1.35;display:grid;gap:2px"><li>Diagnose, configure, and troubleshoot HVAC control systems — sensors, actuators, electrical components, and automated building systems.</li><li>Support heat pumps, compressors, and variable frequency drives (VFDs); test and adjust systems to improve performance.</li><li>Experience relevant to automotive thermal systems, robotics cooling, and industrial automation.</li></ul></div><div style="margin-bottom:0px"><div style="display:flex;justify-content:space-between;gap:12px;align-items:baseline"><span><span style="font-family:var(--font-heading);font-weight:600;font-size:14px">Fulfillment Associate — Automation Environment</span><span style="font-size:12px;color:var(--color-accent-700)"> — Amazon, Port Allen, LA</span></span><span class="text-muted" style="font-size:10.5px;white-space:nowrap">May — Dec 2024</span></div><ul style="margin:4px 0 0;padding-left:16px;font-size:12.5px;line-height:1.35;display:grid;gap:2px"><li>Worked a high-volume production environment to standardized processes, quality requirements, and efficiency metrics.</li><li>Assisted system and mechanical assembly operations and building-automation issue resolution.</li><li>Gained exposure to large-scale automation, robotics integration, and process optimization.</li></ul></div><!--/R:EXP--></div>
+      <div style="display:flex;align-items:center;gap:10px;margin:11px 0 7px"><h6 style="margin:0;color:var(--color-accent-700);font-size:12px">04 · Education</h6><div style="flex:1;height:1px;background:var(--color-divider)"></div></div>
+      <div style="display:flex;justify-content:space-between;gap:12px;align-items:baseline;font-size:12.5px"><span><span style="font-family:var(--font-heading);font-weight:600;font-size:14px">Louisiana State University</span> — Candidate for B.S. in Mechanical Engineering</span><span class="text-muted" style="font-size:10.5px;white-space:nowrap">Expected May 2028</span></div>
+      <div style="font-size:12px;color:var(--color-neutral-800);margin-top:3px">Baton Rouge, LA · Member, National Society of Black Engineers (NSBE) — LSU chapter</div>
+      <div style="margin-top:auto"></div>
+      <div style="display:grid;grid-template-columns:1.5fr 1.6fr 0.8fr 0.6fr;border-top:1px solid var(--color-divider);margin:12px -34px 0">
+        <div style="padding:7px 14px 8px 34px;border-right:1px solid var(--color-divider)"><div class="text-muted" style="font-size:8.5px;letter-spacing:0.1em;text-transform:uppercase">Document</div><div style="font-family:var(--font-heading);font-weight:600;font-size:11.5px">Résumé — Anthony Graham Jr.</div></div>
+        <div style="padding:7px 14px 8px;border-right:1px solid var(--color-divider)"><div class="text-muted" style="font-size:8.5px;letter-spacing:0.1em;text-transform:uppercase">Target</div><div style="font-family:var(--font-heading);font-weight:600;font-size:11.5px"><!--R:TB-->Mechanical Engineering<!--/R:TB--></div></div>
+        <div style="padding:7px 14px 8px;border-right:1px solid var(--color-divider)"><div class="text-muted" style="font-size:8.5px;letter-spacing:0.1em;text-transform:uppercase">Rev</div><div style="font-family:var(--font-heading);font-weight:600;font-size:11.5px">Jul 2026</div></div>
+        <div style="padding:7px 14px 8px"><div class="text-muted" style="font-size:8.5px;letter-spacing:0.1em;text-transform:uppercase">Sheet</div><div style="font-family:var(--font-heading);font-weight:600;font-size:11.5px">01 / 01</div></div>
+      </div>
+    </div>
+  </section>
+</doc-page>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showPhone&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    return { showPhone: this.props.showPhone ?? true };
+  }
+}
+</script>
+</body>
+</html>
